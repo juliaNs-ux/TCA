@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> cadastro </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+ <form id="formCadastro">
+        <label for="tipo">Tipo de cadastro:</label>
+        <select id="tipo" required>
+            <option value="">Selecione</option>
+            <option value="paciente">Paciente</option>
+            <option value="medico">Médico</option>
+        </select>
+
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" maxlength="20" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email">
+
+        <div id="camposPaciente" hidden>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" maxlength="11" >
+
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" id="nascimento">
+        </div>
+
+        <div id="camposMedico" hidden>
+        <label for="crm">CRM:</label>
+        <input type="text" id="crm" maxlength="20">
+
+        <label for="especialidade">Especialidade:</label>
+        <input type="text" id="especialidade">
+        </div>
+
+ <button type="submit">Cadastrar</button>
+
+
+    </form>
+    
+</body>
+</html>
