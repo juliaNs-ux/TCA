@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> cadastro paciente </title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   
+<nav>
+    <a href="index.html">Início</a>
+    <a href="cadastropaciente.html">Cadastrar paciente</a>
+    <a href="cadastromedico.html">Cadastrar médico</a>
+    <a href="horarios.html"> Cadastrar horários como Médico</a>
+    <a href="agendamentos.html"> Agendar consultas </a>
+</nav>
+
    <h1>Cadastro de Paciente</h1>
 
     <form id="formPaciente">
@@ -50,6 +58,6 @@
         <button type="submit" id="submit">Cadastrar paciente</button>
 
     </form>
-    <script src="js/script.js"></script>
+    <script  type="module" src="js/paciente.js"></script>
 </body>
 </html>
