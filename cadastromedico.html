@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> cadastro de Médico</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
+<nav>
+    <a href="index.html">Início</a>
+    <a href="cadastropaciente.html">Cadastrar paciente</a>
+    <a href="cadastromedico.html">Cadastrar médico</a>
+    <a href="horarios.html"> Cadastrar horários como Médico</a>
+    <a href="agendamentos.html"> Agendar consultas </a>
+</nav>
 
     <h1>Cadastro de Médico</h1>
 
@@ -32,8 +39,7 @@
         <br><br>
 
         <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email"
-        >
+        <input type="email" id="email" name="email">
 
         <br><br>
 
@@ -43,9 +49,12 @@
 
         <br><br>
 
-        <button type="submit" id="submit2">Cadastrar médico</button>
+        <button type="submit" id="cadastro">Cadastrar médico</button>
 
     </form>
-    <script src="js/script.js"></script>
+
+    \\tem q fazer o CRUD desse 
+
+    <script type="module" src="js/medico.js"></script>
 </body>
 </html>
