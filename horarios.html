@@ -4,12 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> horarios </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
-    <nav>
+ <nav>
     <a href="index.html">Início</a>
-    <a href="horarios.html">Meus horários</a>
-    </nav>
+    <a href="cadastropaciente.html">Cadastrar paciente</a>
+    <a href="cadastromedico.html">Cadastrar médico</a>
+    <a href="horarios.html"> Cadastrar horários como Médico</a>
+    <a href="agendamentos.html"> Agendar consultas </a>
+</nav>
+//o médico vai ter que ter a opção de deletar pacientes, inserir 
+
+     <h1>Cadastro de Horários</h1>
+
+    <form id="form-horarios">
+
+    <label for="crm">Médico :</label>
+    <select id="crm" name="crm" required>
+            <option value="">Selecione um médico</option>
+        </select>
+
+        <br><br>
+
+        <label for="dia_semana">Dia da semana:</label>
+        <select id="dia_semana" name="dia_semana" required>
+            <option value="">Selecione um dia</option>
+            <option value="Segunda"> Segunda-feira </option>
+            <option value="Terça"> Terça-feira </option>
+            <option value="Quarta"> Quarta-feira </option>
+            <option value="Quinta"> Quinta-feira </option>
+            <option value="Sexta"> Sexta-feira </option>
+            <option value="Sábado"> Sábado </option>
+            <option value="Domingo"> Domingo </option>
+        </select>
+
+        <br><br>
+
+        <label for="horario_inicio"> Horário de inicio </label>
+        <input type="time" id="horario_inicio"
+        >
+
+        <br><br>
+
+        <label for="horario_fim">Horário de término:</label>
+        <input type="time" id="horario_fim"
+        >
+
+        <br><br>
+
+        <button type="submit">Cadastrar horário</button>
+
+    </form>
 </body>
+<script type="module" src="js/horarios.js"></script>
 
 </html>
