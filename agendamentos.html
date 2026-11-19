@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Agendamentos </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <nav>
+    <a href="index.html">Início</a>
+    <a href="cadastropaciente.html">Cadastrar paciente</a>
+    <a href="cadastromedico.html">Cadastrar médico</a>
+    <a href="horarios.html"> Cadastrar horários como Médico</a>
+    <a href="agendamentos.html"> Agendar consultas </a>
+</nav>
 
+<form id="form-agendamento">
+
+    <label for="cpf">CPF do paciente:</label>
+    <input type="text" id="cpf" required>
+
+    <button type="button" id="buscar-paciente">
+        Buscar paciente
+    </button>
+
+    <br>
+    <br>
+
+    <label for="nome-paciente">Nome:</label>
+    <input type="text" id="nome-paciente" >
+
+    <br>
+    <br>
+
+    <label for="medico">Médico:</label>
+    <select id="medico" required>
+        <option value="">Selecione um médico</option>
+    </select>
+
+    <br>
+    <br>
+
+    <label for="data">Data da consulta:</label>
+    <input type="date" id="data" required>
+    <br>
+    <br>
+
+    <label for="horario">Horário disponível:</label>
+    <select id="horario" required>
+        <option value="">Selecione um horário</option>
+    </select>
+    <br>
+    <br>
+
+    <button type="submit">Agendar consulta</button>
+
+</form>
+
+<script src="js/agendamento.js"></script>
+</body>
+</html>
